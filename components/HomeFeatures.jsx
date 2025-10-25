@@ -4,7 +4,7 @@ import Reveal from '@/components/Reveal'
 
 const features = [
   { title: 'Fast Attestation', desc: 'State & MEA attestation handled end-to-end.' },
-  { title: 'Apostille & Legalisation', desc: 'Apostille and embassy legalisation guidance.' },
+  { title: 'Apostille & Legalization', desc: 'Apostille and embassy legalization guidance.' },
   { title: 'Visa Assistance', desc: 'Complete visa processing for most destinations.' },
   { title: 'Travel Planning', desc: 'Flight & insurance options to complete your journey.' },
 ]

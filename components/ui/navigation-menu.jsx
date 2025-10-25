@@ -62,7 +62,7 @@ function NavigationMenuItem({
 // ... (other imports and components remain the same)
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-base font-semibold transition-[color,background-color,box-shadow] focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1" +
+  "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-[color,background-color,box-shadow] focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] focus-visible:outline-1" +
   " bg-transparent " + // Base background is transparent
 
   " text-white " + // Default text color is white
