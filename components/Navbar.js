@@ -29,25 +29,21 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full flex justify-center">
-      <AnimatedWrapper className="w-full flex justify-center">
-        <div className="w-[97vw] glass rounded-2xl border backdrop-blur-md py-2 sm:py-2 px-3 sm:px-4">
-          <div className="container mx-auto flex items-center justify-between">
-            {/* Logo with hover effect */}
-            <div className="flex items-center">
-              <Link href="/" className="group">
-                <div className="flex items-center p-1 rounded-full bg-white/4 ring-1 ring-white/6 transition-transform duration-200 group-hover:scale-105 scale-on-hover">
-                  <Image
-                    src="/vta-logo5.PNG"
-                    alt="VTA-Global"
-                    width={48}
-                    height={20}
-                    className="object-contain w-auto h-auto"
-                    priority
-                  />
-                </div>
-              </Link>
-            </div>
+    <nav className='sticky top-0 z-50 w-full glass border-b'>
+      <div className='container mx-auto flex items-center justify-between py-1 sm:py-1.5 px-2 sm:px-4'>
+        {/* Logo with hover effect */}
+        <div className='flex items-center'>
+          <Link href="/" className="transition-transform hover:scale-105 duration-300">
+            <Image
+              src="/vta-logo5.png"
+              alt="VTA-Global"
+              width={45}
+              height={16}
+              className="object-contain w-auto h-auto drop-shadow-sm sm:scale-110"
+              priority
+            />
+          </Link>
+        </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -185,8 +181,8 @@ export default function Navbar() {
               </div>
             )}
           </div>
-        </div>
-      </AnimatedWrapper>
-    </nav>
+      </nav>
   );
 }
+
+/* Navbar is exported via the function declaration `export default function Navbar()` above. */
