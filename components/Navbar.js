@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className='flex items-center'>
           <Link href="/" className="transition-transform hover:scale-105 duration-300">
             <Image
-              src="/vta-logo5.png"
+              src="/vta-logo5.PNG"
               alt="VTA-Global"
               width={45}
               height={16}

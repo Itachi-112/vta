@@ -129,13 +129,19 @@
 /* Glassmorphism utility */
 .glass {
   /* tuned to be more translucent and less blurry so background SVG shows through */
+  background: rgba(255, 255, 255, 0.7);
   background: linear-gradient(
     120deg,
     rgba(59, 130, 246, 0.08) 0%,
     rgba(255, 255, 255, 0.65) 100%
   );
-  backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
   -webkit-backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  -moz-backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  -o-backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: backdrop-filter;
   border-bottom: 1px solid rgba(59, 130, 246, 0.08);
   box-shadow:
     0 6px 20px rgba(59, 130, 246, 0.08),
@@ -145,11 +151,18 @@
 
 .dark .glass {
   /* dark theme: lower opacity to let animated background show while retaining contrast */
+  background: rgba(30, 41, 59, 0.5);
   background: linear-gradient(
     120deg,
     rgba(30, 41, 59, 0.35) 0%,
     rgba(59, 130, 246, 0.12) 100%
   );
+  -webkit-backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  -moz-backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  -o-backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  backdrop-filter: blur(8px) saturate(160%) contrast(1.04);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   border-bottom: 1px solid rgba(59, 130, 246, 0.12);
   box-shadow:
     0 6px 20px rgba(15, 23, 42, 0.18),
